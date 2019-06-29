@@ -1,33 +1,342 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+	text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+	/*background: linear-gradient(45deg, rgba(41,106,186,0.89) 0%, rgba(50,132,194,0.87) 24%, rgba(123,137,209,0.84) 54%, rgba(128,196,242,0.82) 81%, rgba(175,234,247,0.81) 93%, rgba(175,234,247,0.8) 100%);*/
+	background: linear-gradient(45deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%);
+	
+	/*background: linear-gradient(
+    330deg,
+    #344a7f 0%,
+    #344a7f 25%,
+    #3a6ad1 50%,
+    #2b94d1 75%,
+    #f186c1 100%
+  );*/
+  
+	
+	height: 100vh;
+	
+	display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	justify-content: center;
+	align-items: center;
+
+  /*background: rgb(15, 129, 206);
+  background: linear-gradient(90deg, rgb(49, 144, 175) 0%, rgb(41, 55, 184) 13%, rgba(9,121,90,1) 35%, rgba(7,136,118,1) 46%, rgba(6,142,128,1) 50%, rgba(5,155,151,1) 59%, rgba(3,174,187,1) 73%, rgba(0,212,255,1) 90%);*/
+
+  
+  font-size: calc(15px + 2vmin);
+}
+
+.box {
+  border: 5px solid;
+  /*border-color: #31BAC5 #3286AA #324F8C #180168;*/
+  font-size: 375%;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 40px;
+
+}
+
+body {
+	background: white;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav  {
+	float: right;
+	padding-right: 70px;
+	position: fixed;
+	right: 15px;
+	top: 40px;
+	font-size: 26px;
+	font-family: 'Montserrat', sans-serif;
 }
+
+.nav ul {
+	list-style: none;
+}
+
+.nav li {
+	margin: 10px;
+	padding-bottom: 5px;
+}
+
+.burger-icon {
+	color: white;
+	position: fixed;
+	right: 25px;
+	top: 25px;
+	font-size: 50px;
+}
+
+.social .icon {
+	color: white;
+	padding-right: 20px;
+	
+}
+
+#description {
+	margin-top: 65px;
+	margin-bottom: 30px;
+  font-size: 60%;
+  font-family: 'Karla', sans-serif;
+	color: white;
+	max-width: 500px;
+}
+
+.arrow {
+	color: white;
+	margin-top: 30px;
+	font-size: 130%;
+}
+
+.fas .fab {
+  background: linear-gradient(
+    to right,
+    #30cfd0 0%,
+    #180168 100%
+  ); /* on mouse over alter gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 160%;
+	margin-top: 10%
+}
+
+.about-me {
+	min-height: 100vh;
+	justify-content: center;
+}
+
+.projects {
+	margin: 30px;
+	min-height: 100vh;
+}
+
+.about-me div.container-fluid {
+	max-width: 1200px;
+	padding-right: 100px;
+}
+
+#profile-pic {
+	max-width: 370px;
+	margin-top: 40%;
+}
+
+.about-me-description {
+  font-size: 118%;
+  font-family: 'Karla', sans-serif;
+  color: #333;
+	margin-top: 25px;
+	text-align: justify;
+}
+
+.about-me-description h1 {
+	margin-bottom: 20px;
+	background: linear-gradient(45deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	font-weight: bold;
+	text-align: left;
+}
+
+@media (max-width: 992px) {
+	.about-me-description {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	#profile-pic {
+		max-width: 350px;
+		margin-top: 20px;
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+
+.contact {
+  font-family: 'Karla', sans-serif;
+  font-size: 130%;
+	color: #2f3133;
+	height: 100vh;
+}
+
+.contact > h1 {
+	margin-bottom: 40px;
+	background: linear-gradient(45deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	font-weight: bold;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.contact li {
+  padding: 10px;
+	list-style: none;
+}
+
+.contact i {
+color: #A0AFE2
+}
+
+.contact .icon {
+	font-size: 80px;
+}
+
+.skills-info {
+	text-align: center;
+	font-family: 'Karla', sans-serif;
+	color: #333;
+}
+
+.skills {
+	margin-top: 40px;
+}
+
+.skills h1 {
+	margin-bottom: 20px;
+	background: linear-gradient(45deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	font-weight: bold;
+	font-size: 2em;
+	text-align: left;
+}
+
+.skills-info .icon {
+	font-size: 40px;
+	color: #A4AEE0;
+}
+
+.skills-info h3 {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.skills-info p {
+	line-height: 100%;
+	font-size: 23px;
+}
+
+
+
+
+
+/* no-gutters Class Rules */
+.row.no-gutters {
+   margin-right: 0;
+   margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+   padding-right: 0;
+   padding-left: 0;
+}
+
+.card {
+	display: grid;
+	place-items: center;
+}
+
+.card-img-overlay {
+	position: absolute;
+	padding-top: 15%;
+}
+
+.btn.btn-md {
+	font-size: 15px;
+	background-color: #64A0E6;
+	opacity: 0.7;
+	margin-top: 55px;
+}
+
+mark {
+	background-color: #8AB2EC;
+	color: white;
+}
+
+.projects {
+	font-family: 'Karla', sans-serif;
+}
+
+.card-title {
+
+}
+
+video {
+	
+}
+
+
+.projects h1 {
+	margin-bottom: 40px;
+	background: linear-gradient(45deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: bold;
+	font-size: 2.5em;
+	text-align: left;
+}
+
+.project-description {
+	
+}
+
+
+
+#videosList {
+ 
+	 overflow: hidden;
+ }
+ 
+ .video {
+	 background-image: url("clock.mp4");
+	 width: 300px;
+	 margin-bottom: 50px;
+ }
+ 
+ /* Hide Play button + controls on iOS */
+ video::-webkit-media-controls {
+		 display:none !important;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
