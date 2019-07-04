@@ -136,11 +136,6 @@ body {
 	justify-content: center;
 }
 
-.projects {
-	margin: 30px;
-	min-height: 100vh;
-}
-
 .about-me div.container-fluid {
 	max-width: 1200px;
 	padding-right: 100px;
@@ -259,55 +254,10 @@ color: #A0AFE2
    padding-left: 0;
 }
 
-.card {
-	display: grid;
-	place-items: center;
-}
-
-.card-img-overlay {
-	position: absolute;
-	padding-top: 15%;
-}
-
-.btn.btn-md {
-	font-size: 15px;
-	background-color: #64A0E6;
-	opacity: 0.7;
-	margin-top: 55px;
-}
-
 mark {
 	background-color: #8AB2EC;
 	color: white;
 }
-
-.projects {
-	font-family: 'Karla', sans-serif;
-}
-
-.card-title {
-
-}
-
-video {
-	
-}
-
-
-.projects h1 {
-	margin-bottom: 40px;
-	background: linear-gradient(45deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-weight: bold;
-	font-size: 2.5em;
-	text-align: left;
-}
-
-.project-description {
-	
-}
-
-
 
 #videosList {
  
@@ -325,37 +275,51 @@ video {
 		 display:none !important;
  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
 	text-align: center;
 }
 
+.projects {
+	min-height: 100vh;
+	font-family: 'Karla', sans-serif;
+	margin: 30px;
+}
 
+.projects h1 {
+	margin-bottom: 20px;
+	background: linear-gradient(90deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	font-weight: bold;
+	text-align: left;
+	font-size: 35px;
+}
 
+.card {
+	display: grid;
+	place-items: center;
+	margin-bottom: 15px;
+	position: relative;
+}
 
+.card-img-overlay {
+	display: flex;
+	align-items: flex-end;
+	align-content: flex-end;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: absolute;
+	padding: 0;
+}
 
+.card .btn.btn-sm {
+	font-size: 15px;
+	background-color: rgba(101, 161, 230, .8);
+	box-shadow: none;
+	border-radius: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.card .text {
+	background: black;
+	color: white;
+	width: 100%;
+}
