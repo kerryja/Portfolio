@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 //import { Route, Link } from "react-router-dom";
 import { Link } from 'react-scroll'
+import "./Navbar.css";
 
 class Navbar extends Component {
 	render() {
@@ -22,6 +23,22 @@ class Navbar extends Component {
 				burger.classList.replace ("fa-hamburger", "fa-times");
 			}
 		}
+
+		window.onscroll = () => {
+			let burger = document.getElementById("nav-burger");
+			let nav = document.getElementById("nav-links");
+			let firstPanel = document.getElementById("home");
+			let threshold = firstPanel.clientHeight - burger.clientHeight;
+			if(window.scrollY > threshold) {
+				if (!burger.classList.contains("scroll")) {
+					burger.classList.add("scroll");
+					nav.classList.add("scroll");
+				}
+			} else if (window.scrollY < threshold && burger.classList.contains("scroll")) {
+				burger.classList.remove("scroll");
+				nav.classList.remove("scroll");
+			}
+		};
 
 		return (
 			<div className="nav">

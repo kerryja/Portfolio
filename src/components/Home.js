@@ -11,7 +11,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Element name="home" className="App-header">
+        <Element name="home" id="home" className="App-header">
           <h1 className="box">
             kerry <br />
             jackson
