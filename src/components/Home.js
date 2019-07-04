@@ -26,7 +26,7 @@ class Home extends Component {
 						<a href="https://twitter.com/kerryjac1" target="_blank"><i className="icon fas fa-paper-plane"></i></a>
 						</div>
               <Link to="about" activeClass="active" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
-              <i class="arrow fas fa-angle-double-down"></i>
+              <i className="arrow fas fa-angle-double-down"></i>
               </Link>
             </div>
         </Element>

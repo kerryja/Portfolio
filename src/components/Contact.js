@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import "./Contact.css";
 
 class Contact extends Component {
   render() {
     return (
       <div className="contact">
-				<h1>Contact Me</h1>
+				<h1>Let's get in touch!</h1>
         <p className="icon">☕</p>
         <p>Feel free to reach me at <a href="mailto:me@kerry.dev">me@kerry.dev</a></p>
         <p>I'm also available on:</p>

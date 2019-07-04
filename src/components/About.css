@@ -1,0 +1,155 @@
+/*.about-me {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+
+.about-me div.container-fluid {
+	max-width: 1200px;
+	padding-right: 100px;
+}
+
+#profile-pic {
+	max-width: 370px;
+	margin-top: 40%;
+}
+
+.about-me-description {
+  font-size: 118%;
+  font-family: 'Karla', sans-serif;
+  color: #333;
+	margin-top: 25px;
+	text-align: justify;
+}
+
+.about-me-description h1 {
+	margin-bottom: 20px;
+	background: linear-gradient(90deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	font-weight: bold;
+	text-align: left;
+	font-size: 35px;
+}
+
+ @media screen and (max-width: 992px) {
+	.about-me-description {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}	 
+
+.skills-info {
+	text-align: center;
+	font-family: 'Karla', sans-serif;
+	color: #333;
+}
+
+.skills {
+	margin-top: 40px;
+}
+
+.skills h1 {
+	margin-bottom: 20px;
+	background: linear-gradient(90deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	font-weight: bold;
+	font-size: 35px;
+	text-align: left;
+	font-family: 'Karla', sans-serif;
+}
+
+.skills-info .icon {
+	font-size: 40px;
+	color: #A4AEE0;
+}
+
+.skills-info h3 {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.skills-info p {
+	line-height: 100%;
+	font-size: 23px;
+}
+*/
+
+.about-me {
+	min-height: 100vh;
+	justify-content: center;
+}
+
+.about-me div.container-fluid {
+	max-width: 1200px;
+	padding-right: 100px;
+}
+
+.about-me-description {
+  font-size: 118%;
+  font-family: 'Karla', sans-serif;
+  color: #333;
+	margin-top: 25px;
+	text-align: justify;
+}
+
+@media (max-width: 992px) {
+	.about-me-description {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}	
+
+.about-me-description h1 {
+	margin-bottom: 20px;
+	background: linear-gradient(45deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	font-weight: bold;
+	text-align: left;
+}
+
+#profile-pic {
+	max-width: 370px;
+	margin-top: 40%;
+}
+@media (max-width: 992px) {
+#profile-pic {
+	max-width: 350px;
+	margin-top: 20px;
+	margin-right: 0;
+	margin-left: 0;
+	}
+}
+
+.skills {
+	margin-top: 40px;
+}
+
+.skills h1 {
+	margin-bottom: 20px;
+	background: linear-gradient(45deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	font-weight: bold;
+	font-size: 35px;
+	text-align: left;
+}
+
+.skills-info {
+	text-align: center;
+	font-family: 'Karla', sans-serif;
+	color: #333;
+}
+
+.skills-info p {
+	line-height: 100%;
+	font-size: 23px;
+}
+
+.skills-info .icon {
+	font-size: 40px;
+	color: #A4AEE0;
+}
+
+.skills-info h3 {
+	font-size: 25px;
+	font-weight: bold;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./About.css";
 
 class About extends Component {
 	render() {
@@ -32,27 +33,27 @@ class About extends Component {
 								<p>If you would like to hear more of my story, please visit my <a target="_blank" href="https://kerry.dev/blog">blog</a>!</p>
 							</div>
 
-							<div class="skills">
+							<div className="skills">
 								<h1>Skills</h1>
-								<div class="skills-info">
-									<div class="row">
-										<div class="col-sm-6 col-md-3">
-											<i class="icon fab fa-react"></i>
+								<div className="skills-info">
+									<div className="row">
+										<div className="col-sm-6 col-md-3">
+											<i className="icon fab fa-react"></i>
 											<h3>Frontend</h3>
 											<p>HTML, CSS, React, Bootstrap</p>
 										</div>
-										<div class="col-sm-6 col-md-3">
-											<i class="icon fas fa-code-branch"></i>
+										<div className="col-sm-6 col-md-3">
+											<i className="icon fas fa-code-branch"></i>
 											<h3>Version Control</h3>
 											<p>Git, GitHub</p>
 										</div>
-										<div class="col-sm-6 col-md-3">
-											<i class="icon fas fa-database"></i>
+										<div className="col-sm-6 col-md-3">
+											<i className="icon fas fa-database"></i>
 											<h3>Databases</h3>
 											<p>Firebase, PostgresSQL</p>
 										</div>
-										<div class="col-sm-6 col-md-3">
-											<i class="icon fab fa-node-js"></i>
+										<div className="col-sm-6 col-md-3">
+											<i className="icon fab fa-node-js"></i>
 											<h3>Server Side</h3>
 											<p>Node.JS, Express, Sequelize</p>
 										</div>

@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import "./Projects.css";
 
 class Projects extends Component {
 	constructor(props) {

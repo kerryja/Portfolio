@@ -17,6 +17,7 @@
   
 	
 	height: 100vh;
+	width: 100vw;
 	
 	display: flex;
   flex-direction: column;
@@ -41,7 +42,6 @@
 	padding-top: 50px;
 	padding-bottom: 50px;
 	margin-top: 40px;
-
 }
 
 body {
@@ -119,207 +119,17 @@ body {
 	font-size: 130%;
 }
 
-.fas .fab {
-  background: linear-gradient(
-    to right,
-    #30cfd0 0%,
-    #180168 100%
-  ); /* on mouse over alter gradient */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 160%;
-	margin-top: 10%
-}
-
-.about-me {
-	min-height: 100vh;
-	justify-content: center;
-}
-
-.about-me div.container-fluid {
-	max-width: 1200px;
-	padding-right: 100px;
-}
-
-#profile-pic {
-	max-width: 370px;
-	margin-top: 40%;
-}
-
-.about-me-description {
-  font-size: 118%;
-  font-family: 'Karla', sans-serif;
-  color: #333;
-	margin-top: 25px;
-	text-align: justify;
-}
-
-.about-me-description h1 {
-	margin-bottom: 20px;
-	background: linear-gradient(45deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-	font-weight: bold;
-	text-align: left;
-}
-
-@media (max-width: 992px) {
-	.about-me-description {
-		margin-right: 0;
-		margin-left: 0;
-	}
-
-	#profile-pic {
-		max-width: 350px;
-		margin-top: 20px;
-		margin-right: 0;
-		margin-left: 0;
-	}
-}
-
-.contact {
-  font-family: 'Karla', sans-serif;
-  font-size: 130%;
-	color: #2f3133;
-	height: 100vh;
-}
-
-.contact > h1 {
-	margin-bottom: 40px;
-	background: linear-gradient(45deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-	font-weight: bold;
-	font-size: 2.5em;
-	text-align: center;
-}
-
-.contact li {
-  padding: 10px;
-	list-style: none;
-}
-
-.contact i {
-color: #A0AFE2
-}
-
-.contact .icon {
-	font-size: 80px;
-}
-
-.skills-info {
-	text-align: center;
-	font-family: 'Karla', sans-serif;
-	color: #333;
-}
-
-.skills {
-	margin-top: 40px;
-}
-
-.skills h1 {
-	margin-bottom: 20px;
-	background: linear-gradient(45deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-	font-weight: bold;
-	font-size: 2em;
-	text-align: left;
-}
-
-.skills-info .icon {
-	font-size: 40px;
-	color: #A4AEE0;
-}
-
-.skills-info h3 {
-	font-size: 25px;
-	font-weight: bold;
-}
-
-.skills-info p {
-	line-height: 100%;
-	font-size: 23px;
-}
-
-
-
-
-
-/* no-gutters Class Rules */
-.row.no-gutters {
-   margin-right: 0;
-   margin-left: 0;
-}
-.row.no-gutters > [class^="col-"],
-.row.no-gutters > [class*=" col-"] {
-   padding-right: 0;
-   padding-left: 0;
-}
-
-mark {
-	background-color: #8AB2EC;
-	color: white;
-}
-
-#videosList {
- 
-	 overflow: hidden;
- }
- 
- .video {
-	 background-image: url("clock.mp4");
-	 width: 300px;
-	 margin-bottom: 50px;
- }
- 
- /* Hide Play button + controls on iOS */
- video::-webkit-media-controls {
-		 display:none !important;
- }
-
 footer {
 	text-align: center;
 }
 
-.projects {
-	min-height: 100vh;
-	font-family: 'Karla', sans-serif;
-	margin: 30px;
-}
 
-.projects h1 {
-	margin-bottom: 20px;
-	background: linear-gradient(90deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-	font-weight: bold;
-	text-align: left;
-	font-size: 35px;
-}
 
-.card {
-	display: grid;
-	place-items: center;
-	margin-bottom: 15px;
-	position: relative;
-}
 
-.card-img-overlay {
-	display: flex;
-	align-items: flex-end;
-	align-content: flex-end;
-	justify-content: center;
-	flex-wrap: wrap;
-	position: absolute;
-	padding: 0;
-}
 
-.card .btn.btn-sm {
-	font-size: 15px;
-	background-color: rgba(101, 161, 230, .8);
-	box-shadow: none;
-	border-radius: 15px;
-}
 
-.card .text {
-	background: black;
-	color: white;
-	width: 100%;
-}
+
+
+
+
+
