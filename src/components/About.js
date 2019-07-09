@@ -34,7 +34,7 @@ class About extends Component {
 							</div>
 
 							<div className="skills">
-								<h1>Skills</h1>
+								<h1>Skills</h1> 
 								<div className="skills-info">
 									<div className="row">
 										<div className="col-sm-6 col-md-3">

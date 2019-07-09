@@ -14,9 +14,9 @@
 	font-family: 'Karla', sans-serif;
 }
 
-.video {
-	width: 300px;
-	margin-bottom: 50px;
+video {
+	max-height: 100%;
+	max-width: 100%;
 }
 
 .card {
@@ -24,11 +24,11 @@
 	place-items: center;
 	margin-bottom: 15px;
 	position: relative;
+	width: 100%;
 }
 
 .card-img-overlay {
 	display: flex;
-	align-items: flex-end;
 	align-content: flex-end;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -36,17 +36,20 @@
 	padding: 0;
 }
 
-.card .btn.btn-sm {
-	font-size: 15px;
+.btn.btn-sm {
+	font-size: 20px;
 	background-color: rgba(101, 161, 230, .8);
 	box-shadow: none;
 	border-radius: 15px;
+	color: white;
+	margin-bottom: 5px;
 }
 
 .card .text {
 	background: black;
 	color: white;
 	width: 100%;
+	text-align: center;
 }
 
 

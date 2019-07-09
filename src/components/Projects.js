@@ -36,22 +36,23 @@ class Projects extends Component {
 		return (
 			<React.Fragment>
 				<section className="projects">
-
 					<h1 class="projects-heading">My Work</h1>
 					<div class="row">
 						<div class="col-md-6 col-lg-4">
 							<div class="card">
-								<video src="clock.mp4" width="507.66" loop={true} alt="video of clock project" />
+	
+								<video src="clock.mp4" loop={true} alt="video of clock project" />
 								<div class="card-img-overlay">
 									<a class="btn btn-sm" href="https://www.kerry.dev/clock" target="blank">View Live</a>
 									<a class="btn btn-sm" href="https://github.com/kerryja/JS30/tree/master/2%20-%20CSS%20Clock" target="blank">GitHub</a>
 									<div class="text">Clock built entirely with CSS and JS</div>
-								</div>
+							
+							</div>
 							</div>
 						</div>
 						<div class="col-md-6 col-lg-4">
 							<div class="card">
-								<video src="draw.mp4" width="507.66" loop={true} alt="video of drawing project" />
+								<video src="draw.mp4" loop={true} alt="video of drawing project" />
 								<div class="card-img-overlay">
 									<a class="btn btn-sm" href="https://kerry.dev/draw/" target="blank">View Live</a>
 									<a class="btn btn-sm" href="https://github.com/kerryja/JS30/tree/master/7%20-%20HTML%20Canvas" target="blank">GitHub</a>
@@ -61,7 +62,7 @@ class Projects extends Component {
 						</div>
 						<div class="col-md-6 col-lg-4">
 							<div class="card">
-								<video src="circles.mp4" width="507.66" loop={true} alt="video of circles project" />
+								<video src="circles.mp4" loop={true} alt="video of circles project" />
 								<div class="card-img-overlay">
 									<a class="btn btn-sm" href="https://kerry.dev/circles/" target="blank">View Live</a>
 									<a class="btn btn-sm" href="https://github.com/kerryja/Circles" target="blank">GitHub</a>
@@ -69,44 +70,8 @@ class Projects extends Component {
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-4">
-							<div class="card">
-								<video src="circles.mp4" width="507.66" loop={true} alt="video of circles project" />
-								<div class="card-img-overlay">
-									<a class="btn btn-sm" href="https://kerry.dev/circles/" target="blank">View Live</a>
-									<a class="btn btn-sm" href="https://github.com/kerryja/Circles" target="blank">GitHub</a>
-									<div class="text">some text here</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4">
-							<div class="card">
-								<video src="circles.mp4" width="507.66" loop={true} alt="video of circles project" />
-								<div class="card-img-overlay">
-									<a class="btn btn-sm" href="https://kerry.dev/circles/" target="blank">View Live</a>
-									<a class="btn btn-sm" href="https://github.com/kerryja/Circles" target="blank">GitHub</a>
-									<div class="text">some text here</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-4">
-							<div class="card">
-								<video src="circles.mp4" width="507.66" loop={true} alt="video of circles project" />
-								<div class="card-img-overlay">
-									<a class="btn btn-sm" href="https://kerry.dev/circles/" target="blank">View Live</a>
-									<a class="btn btn-sm" href="https://github.com/kerryja/Circles" target="blank">GitHub</a>
-									<div class="text">some text here</div>
-								</div>
-							</div>
-						</div>
 					</div>
-
-
-
-
 				</section>
-
-
 			</React.Fragment>
 		);
 	}

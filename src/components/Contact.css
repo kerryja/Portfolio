@@ -38,6 +38,10 @@ color: #A0AFE2
   font-size: 130%;
 	color: #2f3133;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .contact h1 {
