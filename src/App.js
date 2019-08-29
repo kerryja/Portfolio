@@ -4,17 +4,18 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 
 class App extends Component {
-  render() {
-    return (
+	render() {
+		return (
 			<div className="App">
-					<nav>
-					</nav>
+				<nav>
+					<Navbar />
+				</nav>
 				<main>
 					<Home />
 				</main>
 			</div>
-    );
-  }
+		);
+	}
 }
-// routes go in app and link in navbar - link will replace a tags
+
 export default App;

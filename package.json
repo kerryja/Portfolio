@@ -2,14 +2,13 @@
   "name": "kerry-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kerry.dev/portfolio",
+  "homepage": "https://kerry.dev",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "2.1.8",
-    "react-scroll": "^1.7.12",
-    "really-smooth-scroll": "^2.1.1"
+    "react-scripts": "^2.1.8",
+    "react-scroll": "^1.7.12"
   },
   "scripts": {
     "start": "react-scripts start",
