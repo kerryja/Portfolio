@@ -25,19 +25,40 @@ class Navbar extends Component {
     window.onscroll = () => {
       let burger = document.getElementById("nav-burger");
       let nav = document.getElementById("nav-links");
+      let projects = document.getElementById("projects");
       let firstPanel = document.getElementById("home");
-      let threshold = firstPanel.clientHeight - burger.clientHeight;
-      if (window.scrollY > threshold) {
+      let threshold1 = firstPanel.clientHeight - burger.clientHeight;
+      let threshold2 = projects.offsetTop;
+      if (window.scrollY > threshold1) {
         if (!burger.classList.contains("scroll")) {
           burger.classList.add("scroll");
           nav.classList.add("scroll");
         }
       } else if (
-        window.scrollY < threshold &&
+        window.scrollY < threshold1 &&
         burger.classList.contains("scroll")
       ) {
         burger.classList.remove("scroll");
         nav.classList.remove("scroll");
+      }
+
+      if (
+        window.scrollY > threshold2 &&
+        window.scrollY < threshold2 + projects.clientHeight
+      ) {
+        if (burger.classList.contains("scroll")) {
+          burger.classList.add("scroll-remove");
+          nav.classList.remove("scroll");
+        }
+      } else if (
+        (window.scrollY < threshold2 &&
+          burger.classList.contains("scroll-remove")) ||
+        (window.scrollY > threshold2 &&
+          burger.classList.contains("scroll-remove"))
+      ) {
+        burger.classList.remove("scroll-remove");
+        burger.classList.add("scroll");
+        nav.classList.add("scroll");
       }
     };
 

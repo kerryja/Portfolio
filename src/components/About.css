@@ -18,6 +18,8 @@
   color: #333;
   margin-top: 25px;
   text-align: justify;
+  position: relative;
+  z-index: -1;
 }
 
 @media screen and (max-width: 992px) {
@@ -89,6 +91,8 @@
 .skills-info {
   text-align: center;
   color: #333;
+  position: relative;
+  z-index: -1;
 }
 
 .skills-info p {

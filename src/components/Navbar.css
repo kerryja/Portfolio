@@ -1,14 +1,16 @@
 .nav {
-  padding-right: 70px;
+  padding-right: 85px;
   position: fixed;
   right: 15px;
   top: 40px;
   font-size: 26px;
   font-family: "Karla", sans-serif;
+  z-index: 1;
 }
 
 .nav ul {
-  list-style: none;
+  list-style-type: none;
+  padding: 20px;
 }
 
 .nav li {
@@ -25,6 +27,7 @@
   font-size: 50px;
   transition-property: opacity, color;
   transition-duration: 0.25s;
+  cursor: pointer;
 }
 
 #nav-burger:hover,
@@ -47,17 +50,33 @@
 }
 
 #nav-burger.scroll {
+  background: linear-gradient(
+    240deg,
+    rgba(56, 133, 222, 0.79) 0%,
+    rgba(82, 153, 235, 0.74) 27%,
+    rgba(123, 137, 209, 0.69) 54%,
+    rgba(128, 196, 242, 0.75) 81%,
+    rgba(175, 234, 247, 0.78) 93%,
+    rgba(175, 234, 247, 0.8) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#nav-burger.scroll-remove {
   display: none;
-  /* background: linear-gradient(240deg, rgba(56,133,222,0.79) 0%, rgba(82,153,235,0.74) 27%, rgba(123,137,209,0.69) 54%, rgba(128,196,242,0.75) 81%, rgba(175,234,247,0.78) 93%, rgba(175,234,247,0.8) 100%); -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; */
 }
 
 #nav-links.expanded.scroll {
-  display: none;
+  background: #a2d5f6;
+}
+
+#nav-links li a {
+  color: white;
 }
 
 #nav-links.scroll {
-  color: black;
+  color: white;
 }
 
 @media (max-width: 992px) {

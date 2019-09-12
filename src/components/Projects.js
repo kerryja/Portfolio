@@ -28,7 +28,7 @@ class Projects extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="projects">
+        <section className="projects" id="projects">
           <h1 className="projects-heading">My Latest Work</h1>
           <div className="row">
             <div className="col-md-6 col-lg-4">
