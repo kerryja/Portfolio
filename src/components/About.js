@@ -18,14 +18,14 @@ class About extends Component {
                 Boston. I am currently a student at{" "}
                 <a
                   href="https://www.bloc.io"
-                  target="blank"
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   {" "}
                   Bloc
                 </a>{" "}
                 where I'm on track to complete their web development boot camp
-                by the end of the summer.
+                by the end of September.
               </p>
               <p>
                 I was introduced to programming via friends working in tech.
@@ -42,17 +42,17 @@ class About extends Component {
               <p>
                 If you would like to hear more of my story, please visit my{" "}
                 <a
+                  href="https://kerry.dev/blog"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://kerry.dev/blog"
                 >
                   blog
                 </a>{" "}
                 or check out my{" "}
                 <a
+                  href="https://kerry.dev/Kerry_Jackson_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://kerry.dev/Kerry_Jackson_Resume.pdf"
                 >
                   resume
                 </a>

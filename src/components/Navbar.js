@@ -20,6 +20,12 @@ class Navbar extends Component {
         burger.classList.add(ClassSwitch);
         burger.classList.replace("fa-hamburger", "fa-times");
       }
+      let nav = document.getElementById("nav");
+      if (nav.classList.contains(ClassSwitch)) {
+        nav.classList.remove(ClassSwitch);
+      } else {
+        nav.classList.add(ClassSwitch);
+      }
     }
 
     window.onscroll = () => {
@@ -63,7 +69,7 @@ class Navbar extends Component {
     };
 
     return (
-      <div className="nav">
+      <div className="nav" id="nav">
         <a
           id="nav-burger"
           className="burger-icon fas fa-hamburger"

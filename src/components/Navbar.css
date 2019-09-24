@@ -5,7 +5,6 @@
   top: 40px;
   font-size: 26px;
   font-family: "Karla", sans-serif;
-  z-index: 1;
 }
 
 .nav ul {
@@ -17,6 +16,10 @@
   margin: 10px;
   padding-bottom: 5px;
   cursor: pointer;
+}
+
+#nav.expanded {
+  z-index: 3;
 }
 
 #nav-burger {
@@ -79,9 +82,18 @@
   color: white;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1340px) {
   #nav-burger {
     display: none;
+  }
+
+  .nav {
+    position: absolute;
+    right: 50%;
+    font-size: 20px;
+    transform: translate(50%, 0);
+    padding-right: 0;
+    top: 0;
   }
 
   #nav-links {
@@ -98,12 +110,10 @@
   #nav-links ul {
     margin-bottom: 15px;
   }
+}
 
+@media (max-width: 690px) {
   .nav {
-    position: absolute;
-    right: 50%;
-    font-size: 15px;
-    transform: translate(50%, 0);
-    padding-right: 0;
+    font-size: 17px;
   }
 }
