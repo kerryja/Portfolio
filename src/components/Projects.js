@@ -34,6 +34,37 @@ class Projects extends Component {
             <div className="col-md-6 col-lg-4">
               <div className="card">
                 <video
+                  src="adopted.mp4"
+                  loop={true}
+                  alt="video of Adopted website"
+                />
+                <div className="card-img-overlay">
+                  <a
+                    className="btn btn-sm"
+                    href="https://adopted-pets.herokuapp.com/"
+                    target="blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Live
+                  </a>
+                  <a
+                    className="btn btn-sm"
+                    href="https://github.com/kerryja/animal-shelter"
+                    target="blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                  <div className="text">
+                    Adopted: Currently revamping a local animal shelter's
+                    website
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <div className="card">
+                <video
                   src="aloha-chat.mp4"
                   loop={true}
                   alt="video of aloha chat project"
@@ -124,37 +155,7 @@ class Projects extends Component {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-4">
-              <div className="card">
-                <video
-                  src="clock.mp4"
-                  loop={true}
-                  alt="video of clock project"
-                  rel="noopener noreferrer"
-                />
-                <div className="card-img-overlay">
-                  <a
-                    className="btn btn-sm"
-                    href="https://kerry.dev/clock"
-                    target="blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Live
-                  </a>
-                  <a
-                    className="btn btn-sm"
-                    href="https://github.com/kerryja/JS30/tree/master/2%20-%20CSS%20Clock"
-                    target="blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </a>
-                  <div className="text">
-                    Clock built entirely with CSS and JS
-                  </div>
-                </div>
-              </div>
-            </div>
+
             <div className="col-md-6 col-lg-4">
               <div className="card">
                 <video
