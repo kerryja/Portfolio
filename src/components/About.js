@@ -15,7 +15,7 @@ class About extends Component {
               <p>
                 My name is Kerry Jackson and and I am so glad you found your way
                 here. I am a full-stack web developer in the lovely city of
-                Boston. I am currently a student at{" "}
+                Boston, having just recently graduated from
                 <a
                   href="https://www.bloc.io"
                   target="_blank"
@@ -23,9 +23,8 @@ class About extends Component {
                 >
                   {" "}
                   Bloc
-                </a>{" "}
-                where I'm on track to complete their web development boot camp
-                by the end of September.
+                </a>
+                's web development bootcamp at the beginning of October.
               </p>
               <p>
                 I was introduced to programming via friends working in tech.
