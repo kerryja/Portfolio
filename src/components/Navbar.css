@@ -18,6 +18,10 @@
   cursor: pointer;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 #nav.expanded {
   z-index: 3;
 }
