@@ -110,7 +110,7 @@ class Projects extends Component {
           <section className="projects" id="projects">
             <h1 className="projects-heading">Select Projects</h1>{" "}
             <div className="row">
-              <div className="col-md-6 col-lg-4">
+              <div className="col-md-6 col-lg-6 col-xl-4">
                 <div className="card">
                   <video
                     src="adopted.mp4"
@@ -141,7 +141,39 @@ class Projects extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4">
+
+              <div className="col-md-6 col-lg-6 col-xl-4">
+                <div className="card">
+                  <video
+                    src="stockup.mp4"
+                    loop={true}
+                    alt="video of StockUp app"
+                  />
+                  <div className="card-img-overlay">
+                    <a
+                      className="btn btn-sm"
+                      href="https://kerryja-stockup.herokuapp.com/"
+                      target="blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Live
+                    </a>
+                    <a
+                      className="btn btn-sm"
+                      href="https://github.com/kerryja/grocery-list-app"
+                      target="blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
+                    <div className="text">
+                      StockUp: Real-time grocery list app built with Next.js,
+                      Socket.io and MongoDB
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 col-lg-6 col-xl-4">
                 <div className="card">
                   <video
                     src="aloha-chat.mp4"
@@ -173,7 +205,7 @@ class Projects extends Component {
                 </div>
               </div>
 
-              <div className="col-md-6 col-lg-4">
+              <div className="col-md-6 col-lg-6 col-xl-4">
                 <div className="card">
                   <video
                     src="bloccit.mp4"
@@ -206,7 +238,7 @@ class Projects extends Component {
                 </div>
               </div>
 
-              <div className="col-md-6 col-lg-4">
+              <div className="col-md-6 col-lg-6 col-xl-4">
                 <div className="card">
                   <video
                     src="draw.mp4"
@@ -236,7 +268,7 @@ class Projects extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4">
+              <div className="col-md-6 col-lg-6 col-xl-4">
                 <div className="card">
                   <video
                     src="circles.mp4"
