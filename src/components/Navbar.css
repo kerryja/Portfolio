@@ -1,123 +1,21 @@
-.nav {
-  padding-right: 85px;
-  position: fixed;
-  right: 15px;
-  top: 40px;
-  font-size: 26px;
-  font-family: "Karla", sans-serif;
+.menu {
+  font-size: 1.75rem;
+  color: white;
 }
 
-.nav ul {
-  list-style-type: none;
-  padding: 20px;
-}
+.menu:focus {
+  outline: none;
+} 
 
-.nav li {
-  margin: 10px;
-  padding-bottom: 5px;
+.nav-item {
+  color: white;
   cursor: pointer;
 }
 
-a:hover {
-  text-decoration: none;
+.nav-item:hover {
+  color: #aedff7;
 }
 
-#nav.expanded {
-  z-index: 3;
-}
-
-#nav-burger {
-  color: white;
-  position: fixed;
-  right: 60px;
-  top: 40px;
-  font-size: 50px;
-  transition-property: opacity, color;
-  transition-duration: 0.25s;
-  cursor: pointer;
-}
-
-#nav-burger:hover,
-#nav-burger.expanded {
-  opacity: 1;
-}
-
-#nav-links {
-  opacity: 0;
-  color: white;
-  transform: scale(0.01, 0.01);
-  transform-origin: 100% 0%;
-  transition-property: opacity, transform;
-  transition-duration: 0.25s;
-}
-
-#nav-links.expanded {
-  transform: none;
-  opacity: 1;
-}
-
-#nav-burger.scroll {
-  background: linear-gradient(
-    240deg,
-    rgba(56, 133, 222, 0.79) 0%,
-    rgba(82, 153, 235, 0.74) 27%,
-    rgba(123, 137, 209, 0.69) 54%,
-    rgba(128, 196, 242, 0.75) 81%,
-    rgba(175, 234, 247, 0.78) 93%,
-    rgba(175, 234, 247, 0.8) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#nav-burger.scroll-remove {
-  display: none;
-}
-
-#nav-links.expanded.scroll {
-  background: #a2d5f6;
-}
-
-#nav-links li a {
-  color: white;
-}
-
-#nav-links.scroll {
-  color: white;
-}
-
-@media (max-width: 1340px) {
-  #nav-burger {
-    display: none;
-  }
-
-  .nav {
-    position: absolute;
-    right: 50%;
-    font-size: 20px;
-    transform: translate(50%, 0);
-    padding-right: 0;
-    top: 0;
-  }
-
-  #nav-links {
-    opacity: 1;
-    transform: none;
-    width: max-content;
-    padding-inline-start: 0;
-  }
-
-  #nav-links li {
-    display: inline-block;
-  }
-
-  #nav-links ul {
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 690px) {
-  .nav {
-    font-size: 17px;
-  }
+.nav-link:hover {
+  color: #aedff7;
 }
