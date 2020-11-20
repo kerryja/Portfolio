@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link, Element } from "react-scroll";
 import About from "./About";
-import Projects from "./Projects";
 import Contact from "./Contact";
 import styled from "styled-components";
 
@@ -126,9 +125,6 @@ class Home extends Component {
         </Element>
         <Element name="about" className="element">
           <About />
-        </Element>
-        <Element name="projects" className="element">
-          <Projects />
         </Element>
         <Element name="contact" className="element">
           <Contact />

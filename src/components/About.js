@@ -118,7 +118,7 @@ class About extends Component {
       <AboutWrapper>
         <div className="row">
           <div className="col-lg-5" align="center">
-            <img id="profile-pic" src="kerry_windsor.png" alt="Kerry Jackson" />
+            <img id="profile-pic" src="meandchin.gif" alt="Kerry Jackson" />
           </div>
           <div className="col-lg-7" align="center">
             <Description>
