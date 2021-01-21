@@ -21,38 +21,40 @@ function Navbar() {
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <Link class="nav-link" to="about">
-                About <span class="sr-only">(current)</span>
-              </Link>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://kerry.dev/blog"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Blog
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://kerry.dev/Kerry_Jackson_Resume.pdf"
-              >
-                Resume
-              </a>
-            </li>
-            <li class="nav-item active">
-              <Link class="nav-link" to="contact">
-                Contact <span class="sr-only">(current)</span>
-              </Link>
-            </li>
-          </ul>
+          <div class="nav-section">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <Link class="nav-link" to="about">
+                  About <span class="sr-only">(current)</span>
+                </Link>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="/blog"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Blog
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="/Kerry_Jackson_Resume.pdf"
+                >
+                  Resume
+                </a>
+              </li>
+              <li class="nav-item active">
+                <Link class="nav-link" to="contact">
+                  Contact <span class="sr-only">(current)</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </Fragment>

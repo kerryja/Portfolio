@@ -1,6 +1,6 @@
 .menu {
-  font-size: 1.75rem;
-  color: white;
+  font-size: 2em;
+  color: #3b4dab;
 }
 
 .menu:focus {
@@ -8,14 +8,21 @@
 } 
 
 .nav-item {
-  color: white;
+  color: #3b4dab;
   cursor: pointer;
 }
 
 .nav-item:hover {
-  color: #aedff7;
+  color: #7a89d1;
 }
 
 .nav-link:hover {
   color: #aedff7;
+}
+
+.nav-section {
+  background-color: rgb(160, 170, 222, 0.8);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
 }

@@ -34,7 +34,6 @@ const AboutWrapper = styled.div`
 `;
 
 const Description = styled.div`
-  font-size: 118%;
   font-family: "Karla", sans-serif;
   color: #333;
   margin-top: 25px;
@@ -45,6 +44,7 @@ const Description = styled.div`
     margin-left: 0;
   }
   h1 {
+    font-size: 2em;
     margin-bottom: 20px;
     background: linear-gradient(
       45deg,
@@ -58,8 +58,11 @@ const Description = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: left;
-    font-size: 35px;
     font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.75em;
   }
 `;
 
@@ -68,6 +71,7 @@ const Skills = styled.div`
   font-family: "Karla", sans-serif;
 
   h1 {
+    font-size: 2em;
     margin-bottom: 20px;
     background: linear-gradient(
       45deg,
@@ -82,7 +86,10 @@ const Skills = styled.div`
     -webkit-text-fill-color: transparent;
     text-align: left;
     font-weight: bold;
-    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 1.75em;
   }
 
   @media screen and (max-width: 992px) {
@@ -98,7 +105,7 @@ const Skills = styled.div`
 
   .technologies p {
     line-height: 100%;
-    font-size: 23px;
+    font-size: 1.5em;
   }
 
   .technologies .icon {
@@ -106,8 +113,7 @@ const Skills = styled.div`
     color: #a4aee0;
   }
 
-  .techologies h3 {
-    font-size: 25px;
+  .techologies h2 {
     font-weight: bold;
   }
 `;
@@ -125,42 +131,31 @@ class About extends Component {
               <h1>Hi!</h1>
               <p>
                 My name is Kerry Jackson and and I am so glad you found your way
-                here. I am a full-stack web developer in the lovely city of
-                Boston, having just recently graduated from
-                <a
-                  href="https://www.bloc.io"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {" "}
-                  Bloc
-                </a>
-                's web development bootcamp at the beginning of October.
-              </p>
-              <p>
-                I was introduced to programming via friends working in tech.
-                This led me to start coding myself and I have never looked back
-                since! Before that, I had been working for 10 years in
-                customer-facing positions that range from office manager of a
-                waste-to-energy power plant to corporate HR Generalist. Through
-                those experiences, I developed a strong sense of empathy for
-                others and learned what it takes to work productively as a team.
-                I am excited to bring my skills to the tech world and I can't
-                wait to start a new career as a web developer!
-              </p>
-
-              <p>
-                If you would like to hear more of my story, please visit my{" "}
-                <a
-                  href="https://kerry.dev/blog"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  blog
+                here. I am a full-stack web developer living just outside of
+                Boston, MA. Since November 2019 I have been working as a web
+                developer for{" "}
+                <a href="http://www.skylla.tech/" target="_blank">
+                  Skylla Technologies
                 </a>{" "}
-                or check out my{" "}
+                where we build browser-based human machine interfaces focused in
+                robotics.
+              </p>
+              <p>
+                I use a wide variety of tools, languages and frameworks. For the
+                frontend, my focus is React and JavaScript and I have experience
+                with the Tailwind, Bulma and Bootstrap CSS frameworks. On the
+                backend side, I have most recently been working with Elixir and
+                its ecosystem (Phoenix, Ecto, ExUnit, Live View). I have also
+                done extensive database work with PostgreSQL.
+              </p>
+              <p>
+                In my spare time, I enjoy refinishing old furniture, baking, and
+                playing with my adorable chinchillas.
+              </p>
+              <p>
+                Please feel free to check out my{" "}
                 <a
-                  href="https://kerry.dev/Kerry_Jackson_Resume.pdf"
+                  href="/Kerry_Jackson_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -171,28 +166,23 @@ class About extends Component {
             </Description>
 
             <Skills>
-              <h1>What I Can Do</h1>
               <div className="technologies">
+                <h1>Skillsets</h1>
                 <div className="row">
-                  <div className="col-sm-6 col-md-3">
+                  <div className="col">
                     <i className="icon fab fa-react" />
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, React, Bootstrap</p>
+                    <h2>Frontend</h2>
+                    <p>React, Redux, JS</p>
                   </div>
-                  <div className="col-sm-6 col-md-3">
-                    <i className="icon fas fa-code-branch" />
-                    <h3>Version Control</h3>
-                    <p>Git, GitHub</p>
-                  </div>
-                  <div className="col-sm-6 col-md-3">
+                  <div className="col">
                     <i className="icon fas fa-database" />
-                    <h3>Databases</h3>
-                    <p>Firebase, PostgreSQL</p>
+                    <h2>Databases</h2>
+                    <p>PostgreSQL, Ecto</p>
                   </div>
-                  <div className="col-sm-6 col-md-3">
-                    <i className="icon fab fa-node-js" />
+                  <div className="col">
+                    <i className="icon fas fa-server" />
                     <h3>Server Side</h3>
-                    <p>Node.js, Express, Sequelize</p>
+                    <p>Phoenix, Express</p>
                   </div>
                 </div>
               </div>

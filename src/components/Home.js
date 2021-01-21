@@ -76,7 +76,7 @@ class Home extends Component {
             jackson
           </h1>
           <Description>
-            <p>Developer / Traveler / Crafter</p>
+            <p>Developer / Traveler / DIYer</p>
           </Description>
           <Social>
             <a
@@ -98,17 +98,10 @@ class Home extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="icon fab fa-github" />
-            </a>
-            <a
-              href="https://twitter.com/kerryjac1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="icon fab fa-twitter" />
+              <i className="icon fa fa-github" />
             </a>
             <a href="mailto:me@kerry.dev">
-              <i className="icon fas fa-paper-plane" />
+              <i className="icon far fa-envelope" />
             </a>
           </Social>
           <Link
