@@ -6,7 +6,6 @@ import Burger from "./components/Burger/Burger";
 import Menu from "./components/Menu/Menu";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
-// import Navbar from "./components/Navbar";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
