@@ -2,24 +2,46 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const AboutWrapper = styled.div`
-  min-height: 100vh;
-  margin-right: 150px;
-  margin-left: 150px;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  padding-top: 10vh;
 
-  @media screen and (max-width: 1340px) {
-    margin-right: 25px;
-    margin-left: 25px;
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    background: linear-gradient(
+      45deg,
+      rgba(56, 133, 222, 0.79) 0%,
+      rgba(82, 153, 235, 0.74) 27%,
+      rgba(123, 137, 209, 0.69) 54%,
+      rgba(128, 196, 242, 0.75) 81%,
+      rgba(87, 181, 201, 0.78) 93%,
+      rgba(211, 247, 255, 0.8) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    font-weight: bold;
   }
 
   #profile-pic {
     max-width: 370px;
-    margin-top: 100px;
   }
 
   @media screen and (max-width: 992px) {
     #profile-pic {
       max-width: 275px;
-      margin-top: 20px;
+      margin-top: 10px;
+    }
+  }
+
+  #work {
+    margin-top: 10vh;
+  }
+
+  @media screen and (max-width: 992px) {
+    #work {
+      margin-top: 3vh;
     }
   }
 
@@ -36,60 +58,40 @@ const AboutWrapper = styled.div`
 const Description = styled.div`
   font-family: "Karla", sans-serif;
   color: #333;
-  margin-top: 25px;
-  text-align: justify;
+  text-align: left;
+
+  #about-summary {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-justify: inter-word;
+  }
 
   @media screen and (max-width: 992px) {
     margin-right: 0;
     margin-left: 0;
   }
-  h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    background: linear-gradient(
-      45deg,
-      rgba(56, 133, 222, 0.79) 0%,
-      rgba(82, 153, 235, 0.74) 27%,
-      rgba(123, 137, 209, 0.69) 54%,
-      rgba(128, 196, 242, 0.75) 81%,
-      rgba(175, 234, 247, 0.78) 93%,
-      rgba(175, 234, 247, 0.8) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: left;
-    font-weight: bold;
-  }
 
-  h2 {
-    font-size: 1.75em;
+  h1 {
+    font-size: 2.5rem;
   }
 `;
 
 const Skills = styled.div`
-  margin-top: 40px;
   font-family: "Karla", sans-serif;
+  text-align: center;
+  color: #333;
 
   h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    background: linear-gradient(
-      45deg,
-      rgba(56, 133, 222, 0.79) 0%,
-      rgba(82, 153, 235, 0.74) 27%,
-      rgba(123, 137, 209, 0.69) 54%,
-      rgba(128, 196, 242, 0.75) 81%,
-      rgba(175, 234, 247, 0.78) 93%,
-      rgba(175, 234, 247, 0.8) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: left;
+    line-height: 100%;
     font-weight: bold;
   }
 
   h2 {
     font-size: 1.75em;
+  }
+
+  p {
+    line-height: 100%;
+    font-size: 1.5em;
   }
 
   @media screen and (max-width: 992px) {
@@ -98,23 +100,36 @@ const Skills = styled.div`
     }
   }
 
-  .technologies {
-    text-align: center;
-    color: #333;
+  .icon {
+    font-size: 40px;
+    color: #a4aee0;
+  }
+`;
+
+const Projects = styled.div`
+  margin-top: 7vh;
+  font-family: "Karla", sans-serif;
+  text-align: center;
+  color: #333;
+
+  h1 {
+    line-height: 100%;
+    font-weight: bold;
   }
 
-  .technologies p {
+  h2 {
+    font-size: 1.75em;
+  }
+
+  p {
     line-height: 100%;
     font-size: 1.5em;
   }
 
-  .technologies .icon {
-    font-size: 40px;
-    color: #a4aee0;
-  }
-
-  .techologies h2 {
-    font-weight: bold;
+  @media screen and (max-width: 992px) {
+    h1 {
+      text-align: center;
+    }
   }
 `;
 

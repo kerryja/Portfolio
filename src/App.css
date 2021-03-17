@@ -1,25 +1,7 @@
-.header {
-  background: linear-gradient(
-    45deg,
-    rgba(56, 133, 222, 0.79) 0%,
-    rgba(82, 153, 235, 0.74) 27%,
-    rgba(123, 137, 209, 0.69) 54%,
-    rgba(128, 196, 242, 0.75) 81%,
-    rgba(175, 234, 247, 0.78) 93%,
-    rgba(175, 234, 247, 0.8) 100%
-  );
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html {
+  font-size: 15px;
 }
 
-body {
-  background: white;
-}
 
 .App-link {
   color: #61dafb;

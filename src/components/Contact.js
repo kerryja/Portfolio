@@ -3,16 +3,19 @@ import styled from "styled-components";
 
 const ContactWrapper = styled.div`
   font-family: "Karla", sans-serif;
-  font-size: 1.5em;
   color: #2f3133;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 10vh;
+
+  #contact-text {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+  }
 
   h1 {
-    margin-top: 30px;
     margin-bottom: 40px;
     background: linear-gradient(
       45deg,
@@ -26,15 +29,8 @@ const ContactWrapper = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 3rem;
     text-align: center;
-  }
-
-  @media screen and (max-width: 992px) {
-    h1 {
-      margin-bottom: 20px;
-      margin-top: 70px;
-    }
   }
 
   ul {
@@ -70,7 +66,7 @@ class Contact extends Component {
       <ContactWrapper>
         <h1>Let's get in touch!</h1>
         <div class="row">
-          <div class="col" align="center">
+          <div class="col" id="contact-text" align="center">
             <p>
               Feel free to reach me at{" "}
               <a href="mailto:me@kerry.dev">me@kerry.dev</a>

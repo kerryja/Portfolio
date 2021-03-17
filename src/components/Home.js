@@ -5,21 +5,34 @@ import Contact from "./Contact";
 import styled from "styled-components";
 
 const HomeWrapper = styled.div`
-  .arrow {
+  #homepage {
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
     color: white;
-    margin-top: 45px;
-    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      45deg,
+      rgba(56, 133, 222, 0.79) 0%,
+      rgba(82, 153, 235, 0.74) 27%,
+      rgba(123, 137, 209, 0.69) 54%,
+      rgba(128, 196, 242, 0.75) 81%,
+      rgba(175, 234, 247, 0.78) 93%,
+      rgba(175, 234, 247, 0.8) 100%
+    );
+  }
+
+  #arrow {
+    color: white;
+    margin-top: 6vh;
+    font-size: clamp(100%, 1rem + 2vw, 24px);
     cursor: pointer;
   }
 
-  .arrow:hover {
+  #arrow:hover {
     color: #aedff7;
-  }
-
-  @media screen and (max-width: 680px) {
-    .arrow {
-      font-size: 40px;
-    }
   }
 
   .box {
@@ -41,36 +54,26 @@ const Social = styled.div`
     color: white;
     padding-right: 10px;
     padding-left: 10px;
-    font-size: 30px;
+    font-size: clamp(100%, 1rem + 2vw, 24px);
   }
 
   .icon:hover {
     color: #aedff7;
   }
-
-  @media screen and (max-width: 680px) {
-    .icon {
-      font-size: 25px;
-    }
-  }
 `;
 
 const Description = styled.p`
-  margin-top: 30px;
-  margin-bottom: 35px;
-  font-size: 25px;
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+  font-size: clamp(100%, 1rem + 2vw, 24px);
   font-family: "Karla", sans-serif;
-
-  @media screen and (max-width: 680px) {
-    font-size: 20px;
-  }
 `;
 
 class Home extends Component {
   render() {
     return (
       <HomeWrapper>
-        <Element name="home" id="home" className="header">
+        <div name="home" id="homepage">
           <h1 className="box">
             kerry <br />
             jackson
@@ -111,17 +114,17 @@ class Home extends Component {
             smooth={true}
             offset={0}
             duration={500}
-            onSetActive={this.handleSetActive}
           >
-            <i className="arrow" className="arrow fas fa-angle-double-down" />
+            <i id="arrow" className="arrow fas fa-angle-double-down" />
           </Link>
-        </Element>
+        </div>
         <Element name="about" className="element">
           <About />
         </Element>
         <Element name="contact" className="element">
           <Contact />
         </Element>
+        <footer className="text-center mb-2">© 2021 Kerry Jackson</footer>
       </HomeWrapper>
     );
   }
