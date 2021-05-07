@@ -90,13 +90,6 @@ class Home extends Component {
               <i className="icon fab fa-linkedin-in" />
             </a>
             <a
-              href="https://dev.to/kerryja"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="icon fab fa-dev" />
-            </a>
-            <a
               href="https://github.com/kerryja"
               target="_blank"
               rel="noopener noreferrer"

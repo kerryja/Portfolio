@@ -151,7 +151,11 @@ class About extends Component {
                   of Boston, MA. I am currently seeking a full-stack position
                   with a focus on frontend development and database design. From
                   Nov 2019 to Jan 2021 I worked as a web developer for{" "}
-                  <a href="http://www.skylla.tech/" target="_blank">
+                  <a
+                    href="http://www.skylla.tech/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Skylla Technologies
                   </a>{" "}
                   where I helped build browser-based human machine interfaces
@@ -202,7 +206,7 @@ class About extends Component {
                 <div className="col">
                   <i className="icon fas fa-server" />
                   <h2>Server Side</h2>
-                  <p>Phoenix, Express</p>
+                  <p>Next.js, Express, Phoenix</p>
                 </div>
               </div>
             </Skills>
@@ -210,6 +214,39 @@ class About extends Component {
               <div className="row">
                 <div className="col">
                   <h1>Current work</h1>
+                </div>
+                <div className="col">
+                  <h2>Ongoing Projects</h2>
+                  <p>
+                    <a
+                      href="/weather"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Weather App
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href="/birding"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Birding App
+                    </a>
+                  </p>
+                </div>
+                <div className="col">
+                  <h2>Mini Projects</h2>
+                  <p>
+                    <a
+                      href="https://codesandbox.io/dashboard/all/Projects?workspace=3e7841c3-514c-4e5e-945c-5d537fa68c2c"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Kerry's Code Sandbox
+                    </a>
+                  </p>
                 </div>
                 <div className="col">
                   <h2>
@@ -227,30 +264,6 @@ class About extends Component {
                       src="https://www.codewars.com/users/kerryja/badges/micro"
                       alt="codewars badge"
                     />
-                  </p>
-                </div>
-                <div className="col">
-                  <h2>Mini Projects</h2>
-                  <p>
-                    <a
-                      href="https://codesandbox.io/dashboard/all/Projects?workspace=3e7841c3-514c-4e5e-945c-5d537fa68c2c"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Kerry's Code Sandbox
-                    </a>
-                  </p>
-                </div>
-                <div className="col">
-                  <h2>Ongoing Project</h2>
-                  <p>
-                    <a
-                      href="/weather"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Weather App
-                    </a>
                   </p>
                 </div>
               </div>
